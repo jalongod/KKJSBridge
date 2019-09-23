@@ -2,6 +2,7 @@ platform :ios, '8.0'
 
 target 'KKJSBridgeDemo' do
   
+  pod 'KKJSBridge2', :path => '../KKJSBridge2/'
   pod 'KKJSBridge', :path => '../'
 
 end

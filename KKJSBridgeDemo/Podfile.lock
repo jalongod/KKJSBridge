@@ -1,16 +1,21 @@
 PODS:
-  - KKJSBridge (0.0.1)
+  - KKJSBridge (1.0.2)
+  - KKJSBridge2 (1.0.3)
 
 DEPENDENCIES:
   - KKJSBridge (from `../`)
+  - KKJSBridge2 (from `../KKJSBridge2/`)
 
 EXTERNAL SOURCES:
   KKJSBridge:
     :path: "../"
+  KKJSBridge2:
+    :path: "../KKJSBridge2/"
 
 SPEC CHECKSUMS:
-  KKJSBridge: 51c09252f44b6221ce363219b29b5b7f37e72aa5
+  KKJSBridge: 1df53c2c52cb1a1691afa9f27377f7ceca9303a2
+  KKJSBridge2: d35bd2e9ea690d7902640c003cf2465ed5414c03
 
-PODFILE CHECKSUM: df7ab6501457f2b43e692cd8ffd227fb761ea0ed
+PODFILE CHECKSUM: 4b2b35ca6999496069d6f886d4dadcb1ab672091
 
 COCOAPODS: 1.5.3

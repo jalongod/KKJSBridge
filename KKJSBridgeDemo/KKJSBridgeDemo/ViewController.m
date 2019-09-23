@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "WebViewController.h"
-
+#import <KKJSBridge2/WebViewController.h>
+#import "ModuleC.h"
 @interface ViewController ()
 
 @end
@@ -40,6 +40,7 @@
     }
     
     WebViewController *web = [[WebViewController alloc] initWithUrl:url];
+    [web.jsBridgeEngine.moduleRegister registerModuleClass:[ModuleC class]];
     [self.navigationController pushViewController:web animated:YES];
 }
 

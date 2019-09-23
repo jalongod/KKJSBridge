@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <KKJSBridge/KKJSBridge.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithUrl:(NSString * _Nullable)url NS_DESIGNATED_INITIALIZER;
+
+
+@property (nonatomic, strong, readonly) KKWebView *webView;
+@property (nonatomic, copy, readonly) NSString *url;
+@property (nonatomic, strong,readonly) KKJSBridgeEngine *jsBridgeEngine;
 
 @end
 

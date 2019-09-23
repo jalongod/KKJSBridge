@@ -7,11 +7,9 @@
 //
 
 #import "WebViewController.h"
-#import <KKJSBridge/KKJSBridge.h>
 #import "ModuleContext.h"
 #import "ModuleA.h"
 #import "ModuleB.h"
-#import "ModuleC.h"
 #import "ModuleDefault.h"
 
 @interface WebViewController ()<KKWebViewDelegate>
@@ -91,7 +89,7 @@
     // 注册 模块B 并带入上下文
     [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleB.class withContext:context];
     // 注册 模块C
-    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleC.class];
+//    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleC.class];
 }
 
 #pragma mark - 声明周期
