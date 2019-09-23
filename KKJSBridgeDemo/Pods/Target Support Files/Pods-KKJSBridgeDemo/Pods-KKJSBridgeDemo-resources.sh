@@ -93,11 +93,11 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../KKJSBridge/KKJSBridge/JS/KKJSBridge.js"
-  install_resource "${PODS_ROOT}/../../KKJSBridge2/KKJSBridge2/Demo/JS/WebViewJavascriptBridge.js"
+  install_resource "${PODS_ROOT}/../../KKJSBridgeWrapper/KKJSBridgeWrapper/Demo/JS/WebViewJavascriptBridge.js"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../KKJSBridge/KKJSBridge/JS/KKJSBridge.js"
-  install_resource "${PODS_ROOT}/../../KKJSBridge2/KKJSBridge2/Demo/JS/WebViewJavascriptBridge.js"
+  install_resource "${PODS_ROOT}/../../KKJSBridgeWrapper/KKJSBridgeWrapper/Demo/JS/WebViewJavascriptBridge.js"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

@@ -23,4 +23,7 @@
     responseCallback ? responseCallback(@{@"desc": @"我是c模"}) : nil;
 }
 
+- (void)method:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback {
+    responseCallback ? responseCallback(@{@"desc": @"我是c模块"}) : nil;
+}
 @end

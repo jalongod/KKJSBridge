@@ -40,7 +40,7 @@
 
     function invokeModuleDefaultFunction() {
         window.KKJSBridge.on('triggerEvent', function(data) {
-            console.log('receive triggerEvent：', data);
+            console.log('receive triggerEvent2：', data);
         });
         
         window.KKJSBridge.call(null, 'callToTriggerEvent', {}, function(res) {

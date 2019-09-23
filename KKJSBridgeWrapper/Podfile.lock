@@ -1,0 +1,16 @@
+PODS:
+  - KKJSBridge (1.0.2)
+
+DEPENDENCIES:
+  - KKJSBridge (from `../`)
+
+EXTERNAL SOURCES:
+  KKJSBridge:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KKJSBridge: 1df53c2c52cb1a1691afa9f27377f7ceca9303a2
+
+PODFILE CHECKSUM: f84e3f2b4844a0ca2ca24fd319b252ba4acc360e
+
+COCOAPODS: 1.5.3

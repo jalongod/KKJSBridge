@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <KKJSBridge2/WebViewController.h>
+#import <KKJSBridgeWrapper/KKJSBridgeWrapper.h>
+#import "ModuleA.h"
+#import "ModuleB.h"
 #import "ModuleC.h"
 @interface ViewController ()
 
@@ -40,7 +42,15 @@
     }
     
     WebViewController *web = [[WebViewController alloc] initWithUrl:url];
+    
+    ModuleContext *context = [ModuleContext new];
+    context.vc = web;
+    context.scrollView = web.webView.scrollView;
+    context.name = @"webview";
+    
     [web.jsBridgeEngine.moduleRegister registerModuleClass:[ModuleC class]];
+    [web.jsBridgeEngine.moduleRegister registerModuleClass:[ModuleB class] withContext:context];
+    [web.jsBridgeEngine.moduleRegister registerModuleClass:[ModuleA class]];
     [self.navigationController pushViewController:web animated:YES];
 }
 
